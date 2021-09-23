@@ -8,21 +8,32 @@
           JustShip
         </p>
 
-        <div class="columns is-centered">
-          <div class="column is-narrow">
-            <p class="description has-text-white">
-              Un espacio para ayudar a devs, makers y hackers a recorrer el camino y <b>simplemente lanzar</b>.
-            </p>
-            <b-field>
-              <b-input placeholder="elon@tesla.com" rounded />
-              <p class="control">
-                <b-button type="is-warning" icon-left="email" rounded>
-                  Suscribirme
-                </b-button>
+        <form
+          action="https://justship.us5.list-manage.com/subscribe/post?u=fdb583b258029bc395bdcaec7&amp;id=babcb0e041"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div class="columns is-centered">
+            <div class="column is-narrow">
+              <p class="description has-text-white">
+                Un espacio para ayudar a devs, makers y hackers a recorrer el camino y <b>simplemente lanzar</b>.
               </p>
-            </b-field>
+              <b-field>
+                <b-input placeholder="elon@tesla.com" native-type="email" value="" name="EMAIL" rounded />
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fdb583b258029bc395bdcaec7_babcb0e041" tabindex="-1" value=""></div>
+                <p class="control">
+                  <b-button type="is-warning" icon-left="email" native-type="submit" rounded>
+                    Suscribirme
+                  </b-button>
+                </p>
+              </b-field>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
 
