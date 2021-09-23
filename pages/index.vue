@@ -18,12 +18,23 @@
           novalidate
         >
           <div class="columns is-centered">
-            <div class="column is-narrow">
-              <p class="description has-text-white">
+            <div class="column is-4-desktop is-6-tablet is-12-mobile">
+              <p class="description has-text-white has-text-centered">
                 Un espacio para ayudar a devs, makers y hackers a recorrer el camino y <b>simplemente lanzar</b>.
               </p>
-              <b-field>
-                <b-input placeholder="elon@tesla.com" native-type="email" value="" name="EMAIL" rounded />
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-4-desktop is-6-tablet is-12-mobile">
+              <b-field style="margin: auto;">
+                <b-input
+                  placeholder="elon@tesla.com"
+                  native-type="email"
+                  value=""
+                  name="EMAIL"
+                  rounded
+                  expanded
+                />
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fdb583b258029bc395bdcaec7_babcb0e041" tabindex="-1" value=""></div>
                 <p class="control">
                   <b-button type="is-warning" icon-left="email" native-type="submit" rounded>
@@ -44,14 +55,14 @@
       </h1>
       <div class="post">
         <div class="columns is-centered">
-          <div class="column is-narrow">
+          <div class="column is-3-desktop is-4-tablet is-12-mobile">
             <img
               src="https://miro.medium.com/max/1400/0*486qAjHvt7abHeGI"
               alt="De la idea al producto: JustShip."
               class="post-cover"
             />
           </div>
-          <div class="column is-3 is-12-mobile">
+          <div class="column is-3-desktop is-4-tablet is-12-mobile">
             <div class="media post-author">
               <div class="media-left">
                 <img
@@ -265,14 +276,13 @@ export default {}
 }
 .brand {}
 .description {
-  width: 300pt;
   margin: 20pt 0 30pt 0;
 }
 
 /* Post */
 .post {}
 .post .post-cover {
-  width: 300pt;
+  width: 100%;
   border-radius: 10pt;
 }
 .post .post-author {
