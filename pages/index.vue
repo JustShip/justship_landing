@@ -65,7 +65,7 @@
               </small>
             </p>
             <a href="https://medium.com/justship/de-la-idea-al-producto-justship-fd5d9fd3ae83" target="_blank">
-              <b-button type="is-black" rounded>
+              <b-button type="is-black" rounded expanded>
                 Leer más...
               </b-button>
             </a>
@@ -90,46 +90,46 @@
         </div>
       </div>
 
-      <div class="columns is-centered">
+      <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
           <div class="feature">
             <b-icon icon="xml" />
           </div>
         </div>
-        <div class="column is-2 is-12-mobile">
+        <div class="column is-2-desktop is-6-tablet">
           Código fuente abierto
         </div>
       </div>
 
-      <div class="columns is-centered">
+      <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
           <div class="feature">
             <b-icon icon="handshake" />
           </div>
         </div>
-        <div class="column is-2 is-12-mobile">
+        <div class="column is-2-desktop is-6-tablet">
           Colaboración abierta y pública
         </div>
       </div>
 
-      <div class="columns is-centered">
+      <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
           <div class="feature">
             <b-icon icon="currency-usd" />
           </div>
         </div>
-        <div class="column is-2 is-12-mobile">
+        <div class="column is-2-desktop is-6-tablet">
           Administración transparente de los recursos y las finanzas
         </div>
       </div>
 
-      <div class="columns is-centered">
+      <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
           <div class="feature">
             <b-icon icon="thumb-up" />
           </div>
         </div>
-        <div class="column is-2 is-12-mobile">
+        <div class="column is-2-desktop is-6-tablet">
           Decisiones y propiedad colectivas
         </div>
       </div>
@@ -157,8 +157,8 @@
         </a>
       </p>
 
-      <div class="columns is-centered">
-        <div class="column is-narrow">
+      <div class="columns is-centered is-multiline">
+        <div class="column is-2-tablet is-12-mobile">
           <!-- btc -->
           <div class="card wallet">
             <div class="card-content">
@@ -171,7 +171,7 @@
           </div>
           <!-- end btc -->
         </div>
-        <div class="column is-narrow">
+        <div class="column is-2-tablet is-12-mobile">
           <!-- eth -->
           <div class="card wallet">
             <div class="card-content">
@@ -184,7 +184,7 @@
           </div>
           <!-- end eth -->
         </div>
-        <div class="column is-narrow">
+        <div class="column is-2-tablet is-12-mobile">
           <!-- litecoin -->
           <div class="card wallet">
             <div class="card-content">
@@ -197,17 +197,17 @@
           </div>
           <!-- end litecoin -->
         </div>
-        <div class="column is-narrow">
+        <div class="column is-2-tablet is-12-mobile">
           <!-- usdt -->
           <div class="card wallet">
             <div class="card-content">
               <img src="/wallets/usdt.png" alt="USDT" />
-              <p>Tether USDT TRC20</p>
+              <p>USDT TRC20</p>
             </div>
           </div>
           <!-- end usdt -->
         </div>
-        <div class="column is-narrow">
+        <div class="column is-2-tablet is-12-mobile">
           <!-- matic -->
           <div class="card wallet">
             <div class="card-content">
@@ -289,9 +289,7 @@ export default {}
 
 .donations {
   text-align: center;
-}
-.donations a {
-  color: #4361ee;
+  margin-bottom: 10pt;
 }
 
 .donations a:not(:last-child){
@@ -302,9 +300,6 @@ export default {}
   text-align: center;
   display: inline-block;
   margin: 0 10pt 0 10pt;
-}
-.wallet img {
-  width: 130pt;
 }
 
 .bfooter {
