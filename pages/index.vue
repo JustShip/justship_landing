@@ -166,7 +166,9 @@
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-3 is-12-mobile">
-          Tu donación nos ayuda a materializar nuestra misión de acompañar a miles de creativos en su camino al crear startups.
+          <p style="margin-bottom: 10pt;">Tu donación nos ayuda a materializar nuestra misión de acompañar a miles de creativos en su camino al crear startups.</p>
+          <p style="margin-bottom: 10pt;">{{ funding }}% de $10K</p>
+          <b-progress :value="funding" type="is-success" size="is-medium"></b-progress>
         </div>
       </div>
 
@@ -266,7 +268,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      funding: 0
+    }
+  },
+  mounted () {
+    this.$axios.get('https://lugodev-cors-anywhere.herokuapp.com/https://kofi-data.vercel.app/justship').then(({ data }) => {
+      this.funding = parseFloat(data.current.replace(' ', '').replace('%', ''))
+    })
+  }
+}
 </script>
 
 <style scoped>
