@@ -111,9 +111,9 @@ export default {
   'rfg-icon': {
     static: true,
     staticPath: 'favicons',
-    masterPicture: 'static/favicon.png',
+    masterPicture: 'static/favicon.jpg',
     rfg: {
-      masterPicture: 'static/favicon.png',
+      masterPicture: 'static/favicon.jpg',
       iconsPath: '/',
       design: {
         ios: {

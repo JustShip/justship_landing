@@ -2,11 +2,7 @@
   <div>
     <section class="hero is-medium is-orange is-bold has-text-centered">
       <div class="hero-body">
-        <img src="logo.svg" alt="JustShip" width="100pt" class="brand" />
-
-        <p class="title has-text-white">
-          JustShip
-        </p>
+        <img src="logo.png" alt="JustShip" width="200pt" class="brand" />
 
         <form
           action="https://justship.us5.list-manage.com/subscribe/post?u=fdb583b258029bc395bdcaec7&amp;id=babcb0e041"
