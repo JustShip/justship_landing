@@ -281,7 +281,7 @@ export default {
 <style scoped>
 .is-orange {
   background-size: cover;
-  background-image: url('https://images.unsplash.com/photo-1457365050282-c53d772ef8b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');
+  background-image: url('/sky.jpg');
 }
 .brand {}
 .description {
