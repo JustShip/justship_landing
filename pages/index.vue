@@ -62,7 +62,7 @@
             <div class="media post-author">
               <div class="media-left">
                 <img
-                  src="https://miro.medium.com/fit/c/96/96/1*i4BcOt_ZAjUhi6W5aQN6dQ.jpeg"
+                  src="https://img2.teletype.in/files/9b/70/9b708e4b-4c88-41fc-8bbf-36c8a356eb79.jpeg"
                   alt="Carlos Lugones"
                   class="avatar"
                 />
@@ -82,7 +82,7 @@
                 rápido si es necesario, hasta llegar al éxito.
               </small>
             </p>
-            <a href="https://medium.com/justship/de-la-idea-al-producto-justship-fd5d9fd3ae83" target="_blank">
+            <a href="https://blog.justship.to/idea" target="_blank">
               <b-button type="is-black" rounded expanded>
                 Leer más...
               </b-button>
@@ -163,81 +163,16 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-3 is-12-mobile">
           <p style="margin-bottom: 10pt;">Tu donación nos ayuda a materializar nuestra misión de acompañar a miles de creativos en su camino al crear startups.</p>
-          <p style="margin-bottom: 10pt;">{{ funding }}% de $10K</p>
-          <b-progress :value="funding" type="is-success" size="is-medium"></b-progress>
         </div>
       </div>
 
       <p class="donations">
-        <a href="https://ko-fi.com/justship" target="_blank">
-          <img src="https://ko-fi.com/img/Kofi_Logo_Blue.svg" alt="QvaPay" width="90pt" />
-        </a>
-        <a href="https://qvapay.com/payme/justshipto" target="_blank">
-          <img src="https://qvapay.com/img/logo/qvapay-logo-d.png" alt="QvaPay" width="150pt" />
+        <a href="https://paynest.app/JustShip" target="_blank">
+          <img src="https://paynest.app/favicon.png" alt="PayNest" width="90pt" />
+          <br>
+          Donar vía PayNest
         </a>
       </p>
-
-      <div class="columns is-centered is-multiline">
-        <div class="column is-2-tablet is-12-mobile">
-          <!-- btc -->
-          <div class="card wallet">
-            <div class="card-content">
-              <img src="/wallets/btc.png" alt="BTC" />
-              <p>
-                <b-icon icon="bitcoin" size="is-small" />
-                BTC
-              </p>
-            </div>
-          </div>
-          <!-- end btc -->
-        </div>
-        <div class="column is-2-tablet is-12-mobile">
-          <!-- eth -->
-          <div class="card wallet">
-            <div class="card-content">
-              <img src="/wallets/eth.png" alt="ETH" />
-              <p>
-                <b-icon icon="ethereum" size="is-small" />
-                ETH
-              </p>
-            </div>
-          </div>
-          <!-- end eth -->
-        </div>
-        <div class="column is-2-tablet is-12-mobile">
-          <!-- litecoin -->
-          <div class="card wallet">
-            <div class="card-content">
-              <img src="/wallets/litecoin.png" alt="Litecoin" />
-              <p>
-                <b-icon icon="litecoin" size="is-small" />
-                Litecoin
-              </p>
-            </div>
-          </div>
-          <!-- end litecoin -->
-        </div>
-        <div class="column is-2-tablet is-12-mobile">
-          <!-- usdt -->
-          <div class="card wallet">
-            <div class="card-content">
-              <img src="/wallets/usdt.png" alt="USDT" />
-              <p>USDT TRC20</p>
-            </div>
-          </div>
-          <!-- end usdt -->
-        </div>
-        <div class="column is-2-tablet is-12-mobile">
-          <!-- matic -->
-          <div class="card wallet">
-            <div class="card-content">
-              <img src="/wallets/matic.png" alt="Matic" />
-              <p>Matic</p>
-            </div>
-          </div>
-          <!-- end matic -->
-        </div>
-      </div>
     </section>
     <!-- end funding -->
 
@@ -248,6 +183,9 @@
       </a>
       <a href="https://t.me/JustShipTo" class="social">
         <b-icon icon="telegram" size="is-medium" />
+      </a>
+      <a href="https://discord.gg/vwZFjkNhcz" class="social">
+        <b-icon icon="discord" size="is-medium" />
       </a>
       <a href="https://linkedin.com/company/justshipto" class="social">
         <b-icon icon="linkedin" size="is-medium" />
@@ -262,21 +200,6 @@
     <!-- end footer -->
   </div>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      funding: 0
-    }
-  },
-  mounted () {
-    this.$axios.get('https://lugodev-cors-anywhere.herokuapp.com/https://kofi-data.vercel.app/justship').then(({ data }) => {
-      this.funding = parseFloat(data.current.replace(' ', '').replace('%', ''))
-    })
-  }
-}
-</script>
 
 <style scoped>
 .is-orange {
